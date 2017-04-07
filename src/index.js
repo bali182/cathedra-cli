@@ -1,5 +1,4 @@
 import meow from 'meow'
-import isGlob from 'is-glob'
 import { gray, bold, blue } from 'chalk'
 
 import run from './run'
@@ -24,14 +23,10 @@ ${bold(blue('Examples'))}
   $ cathedra bench.js -p my-pres.js  ${gray('# running with custom presenter')}
 `.trim()
 
-const cli = meow(help, config)
+const { input, flags, showHelp } = meow(help, config)
 
-const { input, flags } = cli
-
-if (input.length !== 1 || !isGlob(input[0])) {
-  cli.showHelp()
+if (input.length !== 1) {
+  showHelp()
+} else {
+  run(input[0], flags)
 }
-
-const [path] = input
-
-run(path, flags)
