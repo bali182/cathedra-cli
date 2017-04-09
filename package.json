@@ -2,7 +2,7 @@
   "name": "cathedra-cli",
   "author": "Balazs Edes",
   "license": "MIT",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "CLI tool for cathedra",
   "main": "index.js",
   "bin": {
