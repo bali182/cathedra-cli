@@ -6,7 +6,7 @@
   "description": "CLI tool for cathedra",
   "main": "index.js",
   "bin": {
-    "cathedra": "index.js"
+    "cathedra": "node index.js"
   },
   "files": [
     "index.js",
