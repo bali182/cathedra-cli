@@ -5,9 +5,6 @@
   "version": "0.0.2",
   "description": "CLI tool for cathedra",
   "main": "index.js",
-  "bin": {
-    "cathedra": "index.js"
-  },
   "files": [
     "index.js",
     "readme.md",
